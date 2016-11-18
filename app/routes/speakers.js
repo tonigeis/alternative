@@ -8,6 +8,7 @@ router.get('/speakers', function(req, res) {
     info += `
     <li>
       <h2>${item.name}</h2>
+      <img src="images/speakers/${item.shortname}_tn.jpg">
       <p>${item.summary}</p>
     </li>
     `;
