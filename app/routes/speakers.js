@@ -14,6 +14,9 @@ router.get('/speakers', function(req, res) {
     `;
   });
   res.send(`
+      <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+      </head>
       <h1>Roux Academy Meetups</h1>
       ${info}
   `);
