@@ -1,0 +1,13 @@
+<article class="speakerslist <% if (pageID == 'home') { %>jumbotron hidden-xs<% } %>">
+  <div class="container panel panel-default">
+    <div class="row panel-body">
+        <% meetups.forEach(function(item) { %>
+          <div><%= item.place %></div>
+          <div><i><%= item.topic %></i></div>
+          <div><%= new Date(item.date).toDateString() %></div>
+          <div><%= item.hour %></div>
+          <hr>
+        <% }); %>
+    </div>
+  </div>
+</article>

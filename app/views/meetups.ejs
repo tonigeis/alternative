@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head><% include partials/template/head.ejs %></head>
+  <body id="<%= pageID %>">
+    <% include partials/template/header.ejs %>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="feedback-form-title">Next meetups</h1>
+          <% include partials/content/meetupslist.ejs %>
+        </div><!-- primary -->
+      </div>
+    </div><!-- container -->
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html> 
